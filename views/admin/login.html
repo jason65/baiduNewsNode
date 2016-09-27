@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+      <!--[if lt IE 9]>
+      <script src="../js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- 登陆界面很简单，就是一个outer包含一个container;outer的主要作用是container水平垂直居中 -->
+
+    <div class="container outer">
+        <div class="row">
+        <!-- 以大约50%的窗口大小，来显示登陆的大小 -->
+                <h4 class="welcome">欢迎使用网站后台管理系统</h4>
+                <form class="form-group formie" action="/admin/" method="get">
+                    <label for="username"></label>
+                    <input type="text" name="username" placeholder="用户名" class="form-control username_filed" style="behavior: url(css/PIE.htc);"></input>
+                    <label for="passwd"></label>
+                    <input type="text" name="passwd" placeholder="密码" class="form-control passwd_filed" style="behavior: url(css/PIE.htc);"></input>
+                    <div class="checkbox ">
+                        <label>
+                            <input type="checkbox"> 一周内免登陆
+                        </label>
+                        <a href="#" class="forget">忘记密码</a>
+                    </div>
+                    <button class="btn btn-primary length" type="submit">登陆</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

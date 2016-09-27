@@ -1,0 +1,59 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100% !important;
+	width: 100%;
+}
+.outer{
+	min-height: 100%;
+	min-width: 100%;
+	display: -webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	font-family: "microsoft yahei";
+}
+/*这个是针对IE的优化，*/
+.formie{
+	width: 50%\9;
+	margin: 0\9 auto\9;
+}
+/*欢迎页面居中显示*/
+.welcome{
+	text-align: center;
+}
+
+/*让IE支持圆角矩形，设置输入用户名的input属性；*/
+.username_filed{
+	background-image: url(../img/user.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding: 10px 10px 10px 50px;
+    height: 39px;
+    width: 100%;
+    	border-radius: 6px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	behavior: url(PIE.htc);
+}
+/*让IE支持圆角矩形，设置输入用户名的密码input属性；*/
+.passwd_filed{
+	background-image: url(../img/password.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding: 10px 10px 10px 50px;
+     height: 39px;
+     width: 100%;
+      	border-radius: 6px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	/*behavior: url(PIE.htc);*/
+}
+/*这个是忘记了密码的样式*/
+.forget{
+	display: inline-block;
+	float: right;
+}
+.length{
+	width: 80%;
+	margin-left: 15px;
+}

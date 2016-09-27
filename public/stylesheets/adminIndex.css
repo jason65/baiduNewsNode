@@ -1,0 +1,64 @@
+body{
+	padding-top: 50px;
+	font-family: "microsoft yahei";
+}
+/*nav begins*/
+.nav-banner{
+	float:right;
+}
+
+@media (min-width:768px) {
+    .navbar-nav {
+        margin-left: 20px;
+    }
+}
+ /*nav ends*/
+
+ /*container div begins*/
+ .firstline
+ {
+    margin-top:20px;
+    margin-bottom:20px;
+ }
+ .spanRow
+ {
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+.btn-add{
+    background-color: #C0C0C0;
+    padding-left: 30px;
+    background-image: url(../img/add.png);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+    margin-left: 20px;
+}
+/* .btn-statics{
+     background-color: #C0C0C0;
+    padding-left: 30px;
+    background-image: url(../img/statics.png);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}*/
+
+
+
+
+/*table div begins*/
+ .btn-delete{
+	 background-color: #C0C0C0;
+    padding-left: 30px;
+    background-image: url(../img/delete.png);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}
+ .btn-modify{
+    background-color: #C0C0C0;
+    padding-left: 30px;
+    background-image: url(../img/modify.png);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}
+/*table div ends*/
+ /*container div ends*/

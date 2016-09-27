@@ -1,0 +1,116 @@
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+    <title>百度新闻</title>
+    <meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/homeIndex.css">
+
+
+<style type="text/css">
+  .backGround{
+    background-image: linear-gradient(#3388FF,#3388FF);
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+	<div class="container-fulid">
+  <!-- header begins -->
+  <div class='backGround'>
+    <div class="baidu-nav-logo baidu-nav-con ">
+      <a href="#" class="baidu-icon float-left"></a>
+      <a href="#" class="user-icon float-left"></a>
+      <a href="#" class="subscribe-icon float-right"></a>
+      <a href="#" class="search-icon float-right" ></a>
+    </div>
+    <div class="baidu-view">
+      <ul>
+        <li class="selected" id="link-recommend"><a href="#">推荐</a></li>
+        <li id="linkBaijia"><b></b><a href="#">百家</a></li>
+        <li id="linkLocal"><b></b><a href="#">本地</a></li>
+        <li><b></b><a href="#">图片</a></li>
+        <li><b></b><a href="#">娱乐</a></li>
+        <li><b></b><a href="#">社会</a></li>
+        <li><a href="#">军事</a></li>
+        <li class="internet"><b></b><a href="#">互联网</a></li>
+        <li><b></b><a href="#">科技</a></li>
+        <li><b></b><a href="#">女人</a></li>
+        <li><b></b><a href="#">更多</a></li>
+      </ul>
+    </div>
+  </div>
+ <!-- header ends -->
+ <!-- conetent begins -->
+  <div class="content">
+  <!-- ad div begins -->
+    <div class="row swiper-container">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+        <!-- data: the background of div;the description of backgroud  begins-->
+          <a href="" id="swiper-wrap-img1"><div class="img img1"><p>小伙抢镜鲨鱼</p></div></a>
+          <a href="" id="swiper-wrap-img2"><div class="img img2"><p>汤唯产后，身材依旧</p></div></a>
+          <a href="" id="swiper-wrap-img3"><div class="img img3"><p>F4朱孝天大婚</p></div></a>
+          <a href="" id="swiper-wrap-img4"><div class="img img4"><p>百度新闻新革命</p></div></a>
+        </div>
+        <!-- data: the background of div;the description of backgroud  ends -->
+        <div class="swiper-pagination" id='swiper-pagination'>
+            <span class="paginationSwitch"></span>
+            <span class="paginationSwitch"></span>
+            <span class="paginationSwitch"></span>
+            <span class="paginationSwitch" ></span>
+        </div>
+    </div>
+    <!-- ad div ends -->
+    <!-- hot topic begins -->
+    <div class="row hottopic">
+      <div class="hotSpan"><span>热点</span></div>
+      <!-- data:A total of 4 news begins -->
+      <ul class="hotUl" id="hotUl">
+        <li><a href="">杨正宁捐3件国宝</a></li>
+        <li><a href="">多地取消门诊输液</a></li>
+        <li><a href="">傅园慧身价暴涨20倍</a></li>
+        <li><a href="">iphone7发布会</a></li>
+      </ul>
+      <!-- data:A total of 4 news ends-->
+    </div>
+    <!-- hot topic ends -->
+    <!--    main content begins -->
+    <div id="linkcontenCon">
+      <!-- 推荐 link div begins -->
+      <% for(var i=0; i<data.length; i++) { %>
+      <div class="linkMainContent">
+        <div class="mainImg">
+        <!-- data :pictureLink begins-->
+          <a href="#"><img src="<%= data[i].pictureLink %>" class="mainImgSrc"></a>
+          <!-- data :pictureLink ends-->
+        </div>
+        <div class="mainDes">
+          <!-- data:title begins -->
+          <p class="description"><%= data[i].titile %></p>
+          <!-- data:title ends -->
+          <p class="mainSpec">
+          <!-- data: releaseTime begins -->
+          <span class="times"><%= data[i].releaseTime %></span>
+          <!-- data: releaseTime ends -->
+          <!-- data: property begins -->
+          <span class="newsType"><%= data[i].property %></span>
+          <!-- data: property ends -->
+          </p>
+        </div>
+      </div>
+      <% } %>
+      <!-- 推荐 link div ends -->
+    </div>
+    <!--main content ends -->
+  </div>
+  <!-- conetent ends -->
+</div> 
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/javascripts/homeIndex.js"></script>
+
+</body>
+</html>
